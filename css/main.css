@@ -659,7 +659,7 @@ header .links .main-links .other-links div ul li a i {
   content: "";
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 3px);
 }
 .features .content .box:first-of-type .image::before {
   background-color: rgb(244, 67, 54, 0.6);
@@ -686,7 +686,8 @@ header .links .main-links .other-links div ul li a i {
   -o-transition: var(--transition-time);
 }
 .features .content .box:hover .image::after {
-  border-width: 0 500px 180px 0;
+  right: -5px;
+  border-width: 0 500px 190px 0;
 }
 .features .content .box img {
   width: 100%;
