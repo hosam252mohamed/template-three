@@ -854,7 +854,7 @@ header .links .main-links .other-links div ul li a i {
   content: "";
   position: absolute;
   width: 200%;
-  height: 14px;
+  height: 30px;
   background-color: rgb(255, 255, 255);
   top: 0;
   left: -50%;
@@ -877,7 +877,7 @@ header .links .main-links .other-links div ul li a i {
   }
   40%,
   60% {
-    opacity: 0.5;
+    opacity: 0.4ss;
   }
   100% {
     opacity: 0.2;
