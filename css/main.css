@@ -1330,7 +1330,6 @@ header .links .main-links .other-links div ul li a i {
   font-weight: 600;
   color: var(--main-color);
   padding-bottom: 10px;
-  border-bottom: 2px solid #ddd;
   padding: 18px;
   position: relative;
   transition: var(--transition-time);
@@ -1340,7 +1339,6 @@ header .links .main-links .other-links div ul li a i {
   -o-transition: var(--transition-time);
 }
 .events .right .timer div:first-child span:first-child {
-  position: relative;
   left: -2px;
 }
 .events .right .timer > div:hover span:first-child {
@@ -1370,6 +1368,7 @@ header .links .main-links .other-links div ul li a i {
 .events .right span:last-child {
   padding: 8px 0;
   font-size: 14px;
+  border-top: 2px solid #ddd;
   position: relative;
 }
 .events .right span:last-child::before {
@@ -1409,5 +1408,72 @@ header .links .main-links .other-links div ul li a i {
   }
   .events .right span:first-child {
     padding: 18px 12px;
+  }
+}
+.events form {
+  display: flex;
+  gap: 15px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 25px;
+  max-width: 500px;
+  background-color: #eee;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+@media (max-width: 768px) {
+  .events form {
+    flex-direction: column;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+}
+.events form input[type="email"] {
+  border: 0;
+  padding: 20px;
+  flex: 1;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.events form input[type="email"]:hover {
+  outline: none;
+}
+.events form input[type="email"]::placeholder {
+  transition: var(--transition-time);
+  -webkit-transition: var(--transition-time);
+  -moz-transition: var(--transition-time);
+  -ms-transition: var(--transition-time);
+  -o-transition: var(--transition-time);
+}
+.events form input[type="submit"] {
+  color: white;
+  background-color: var(--main-color);
+  padding: 15px 20px;
+  border: 0;
+  font-weight: 600;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .events form input[type="email"],
+  .events form input[type="submit"] {
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
   }
 }
