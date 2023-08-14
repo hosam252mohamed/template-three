@@ -174,16 +174,6 @@ ul {
   background-size: 30px;
 }
 
-.dots {
-  position: absolute;
-  background-image: url("../imgs/dots.png");
-  background-repeat: no-repeat;
-  background-size: 150%;
-  width: 200px;
-  height: 200px;
-  right: 0;
-  top: 200px;
-}
 /* End Global Rules */
 
 header {
@@ -655,6 +645,8 @@ header .links .main-links .other-links div ul li a i {
 
 .features {
   padding: var(--section-padding) 0;
+  position: relative;
+  z-index: 1;
 }
 .features .content {
   display: grid;
@@ -1299,6 +1291,8 @@ header .links .main-links .other-links div ul li a i {
 
 .events {
   padding: var(--section-padding) 0;
+  position: relative;
+  z-index: 1;
 }
 .events .content {
   display: grid;
@@ -1938,6 +1932,7 @@ footer .content {
 @media (max-width: 768px) {
   footer .content {
     text-align: center;
+    gap: 30px;
   }
 }
 footer .content .about {
@@ -2045,6 +2040,8 @@ footer .content .details div i {
   footer .content .details div {
     flex-direction: column;
     justify-content: center;
+    padding: 0;
+    padding-bottom: 20px;
   }
   footer .content .details div i {
     margin-bottom: 12px;
@@ -2067,4 +2064,14 @@ footer > span {
   text-align: center;
   padding: 25px;
   border-top: 1px solid #666;
+}
+
+img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
 }
